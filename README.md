@@ -13,9 +13,9 @@ Implemented simulation setup as a virtual environment to run the code immediatel
 
     1. Download and install Docker for your OS. 
     2. Pull the image via Docker hub
-        docker pull latteishorse/drone:latest
+        docker pull latteishorse/ece9143:latest
     3. Create a container with the Docker image
-        docker run -it --name drone latteishorse/drone:latest
+        docker run -it --name drone latteishorse/ece9143:latest
 
 ### Attach Docker container to VS code
 
@@ -29,14 +29,9 @@ The environment is set up to run the simulation described earlier in the simulat
 After the above four steps, you can easily handle code and also easily control the docker container.
 
 ### Dataset download
-
+Dataset (Model) already included in the "examples" folder. (.zip format)
 
 ## How to run
-Fig.2 (c) is the results of running ’eval.py’ for each structure. If you do not get similar results (get results looks like Fig. 2 (b)), you should run ’train.py’ again by increasing the time step and proceed with PPO training.
-If you still do not get the result, please contact the author.
-
-![temp](./figure/temp.png)  
-
 ### Train
     python train.py
 
